@@ -11,7 +11,7 @@ namespace ITMWebUI.Models
         public int Id { get; set; }
         public int Number { get; set; }
         public string Name { get; set; }
-        public string Line { get; set; }
+        public int Line { get; set; }
         public Disnponibility Disponibility { get; set; }
         // Temporal use, to be deleted
         //public OpStatus Status { get; set; }

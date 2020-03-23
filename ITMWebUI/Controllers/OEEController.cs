@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ITMWebUI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,6 +11,7 @@ namespace ITMWebUI.Controllers
 {
     public class OEEController : Controller
     {
+        [Authorize]
         // GET: OEE
         public ActionResult Index()
         {
@@ -20,7 +22,7 @@ namespace ITMWebUI.Controllers
                 Id = 1,
                 Name = "Prensa op.10 A",
                 Number = 10,
-                Line = "Prensado A",
+                Line = 1,
                 Disponibility = new Models.OEE.Disnponibility()
                 {
                     Id = 1,
@@ -34,7 +36,7 @@ namespace ITMWebUI.Controllers
                 Id = 2,
                 Name = "Prensa op.20 A",
                 Number = 20,
-                Line = "Prensado A",
+                Line = 1,
                 Disponibility = new Models.OEE.Disnponibility()
                 {
                     Id = 1,
@@ -48,7 +50,7 @@ namespace ITMWebUI.Controllers
                 Id = 3,
                 Name = "Prensa op.30 A",
                 Number = 30,
-                Line = "Prensado A",
+                Line = 1,
                 Disponibility = new Models.OEE.Disnponibility()
                 {
                     Id = 1,
