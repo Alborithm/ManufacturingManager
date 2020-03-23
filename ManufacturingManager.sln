@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ITMWebUI", "ITMWebUI\ITMWeb
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ITMData", "ITMData\ITMData.sqlproj", "{976C0F4B-E8C9-4AF9-B629-CEDB214E2FAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITMWebUI.Library", "ITMWebUI.Library\ITMWebUI.Library.csproj", "{700F154F-FBE5-42C4-946E-90EECECEEB97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{976C0F4B-E8C9-4AF9-B629-CEDB214E2FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{976C0F4B-E8C9-4AF9-B629-CEDB214E2FAB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{976C0F4B-E8C9-4AF9-B629-CEDB214E2FAB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{700F154F-FBE5-42C4-946E-90EECECEEB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700F154F-FBE5-42C4-946E-90EECECEEB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700F154F-FBE5-42C4-946E-90EECECEEB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700F154F-FBE5-42C4-946E-90EECECEEB97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
