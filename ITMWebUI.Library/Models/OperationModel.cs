@@ -11,6 +11,6 @@ namespace ITMWebUI.Library.Models
         public string Name { get; set; }
         public int Number { get; set; }
         public int Line { get; set; }
-        public DisponibilityModel Disponibility { get; set; }
+        //public DisponibilityModel Disponibility { get; set; }
     }
 }

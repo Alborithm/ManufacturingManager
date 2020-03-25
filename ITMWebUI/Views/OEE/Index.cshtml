@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ITMWebUI.Models.Operation>
+﻿@model IEnumerable<ITMWebUI.Library.Models.OperationModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -24,9 +24,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Line)
             </th>
-            <th>
+            @*<th>
                 @Html.DisplayNameFor(model => model.Disponibility.Disponible)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
@@ -45,9 +45,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Line)
             </td>
-            <td>
+            @*<td>
                 @Html.DisplayFor(modelItem => item.Disponibility.Disponible)
-            </td>
+            </td>*@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |

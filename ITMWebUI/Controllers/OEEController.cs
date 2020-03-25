@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ITMWebUI.Library.DataAccess;
 using ITMWebUI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -15,52 +16,9 @@ namespace ITMWebUI.Controllers
         // GET: OEE
         public ActionResult Index()
         {
-            // Temporal data to test the view
-            List<Operation> output = new List<Operation>();
-            output.Add(new Operation()
-            {
-                Id = 1,
-                Name = "Prensa op.10 A",
-                Number = 10,
-                Line = 1,
-                Disponibility = new Models.OEE.Disnponibility()
-                {
-                    Id = 1,
-                    Disponible = true,
-                    OperationId = 1,
-                    TimeUpdated = DateTime.Now
-                }
-            });
-            output.Add(new Operation()
-            {
-                Id = 2,
-                Name = "Prensa op.20 A",
-                Number = 20,
-                Line = 1,
-                Disponibility = new Models.OEE.Disnponibility()
-                {
-                    Id = 1,
-                    Disponible = false,
-                    OperationId = 2,
-                    TimeUpdated = DateTime.Now
-                }
-            });
-            output.Add(new Operation()
-            {
-                Id = 3,
-                Name = "Prensa op.30 A",
-                Number = 30,
-                Line = 1,
-                Disponibility = new Models.OEE.Disnponibility()
-                {
-                    Id = 1,
-                    Disponible = true,
-                    OperationId = 3,
-                    TimeUpdated = DateTime.Now
-                }
-            });
+            OperationData operations = new OperationData();
 
-            return View(output);
+            return View(operations.GetOperations());
         }
 
         // GET: OEE/Details/5
